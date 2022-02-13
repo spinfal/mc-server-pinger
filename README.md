@@ -7,7 +7,7 @@ Checks if a Minecraft server is down and notifies you or everyone.
 [NPM](https://www.npmjs.com/)
 
 ## Get it running
-Configure the [global.js](global.js) file
+Configure the [global.js](global.example.js) file
 
 Then run these commands:
 ```

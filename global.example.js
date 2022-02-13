@@ -1,3 +1,5 @@
+// RENAME THIS FILE TO global.js
+
 module.exports = {
     webhook: "YOUR WEBHOOK URL",
     serverIP: "YOUR SERVER IP",
