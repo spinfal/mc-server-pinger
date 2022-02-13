@@ -3,6 +3,7 @@ Checks if a Minecraft server is down and notifies you or everyone.
 
 ## Prerequisites
 [Node.js](https://nodejs.org/en/download/)
+
 [NPM](https://www.npmjs.com/)
 
 ## Get it running
