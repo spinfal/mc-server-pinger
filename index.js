@@ -5,9 +5,15 @@ const util = require('minecraft-server-util');
 /* variables and imports */
 const Global = require('./global.js');
 const webhook = new Webhook(Global.webhook);
+const minutes = Global.interval / 60000;
 
+webhook.info('**MC Down Detector**', 'Webhook setup succesfully', `The server will be checked every ${minutes} minutes. Minecraft server down detections will be sent in this channel`).then(() => {
+    console.log(`Webhook works! The Minecraft server will be updated every ${minutes} minutes.`);
+}).catch(err => {
+    console.log('Error sending to webhook!\n', err);
+});
 setInterval(() => {
-    util.status(Global.serverIP, { port: Global.serverPort ?? 25565 })
+    util.status(Global.serverIP, { port: Global.serverPort })
         .then(res => {
             if (res.version === null) {
                 const embed = new MessageBuilder()
