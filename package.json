@@ -20,7 +20,7 @@
   "homepage": "https://github.com/spinfal/mc-server-pinger#readme",
   "dependencies": {
     "discord-webhook-node": "^1.1.8",
-    "minecraft-server-util": "^3.4.2"
+    "minecraft-server-util": "^3.7.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
